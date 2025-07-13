@@ -3,9 +3,12 @@ main {
 }
 
 aside {
-    width: 20rem margin: 1rem border: 1px solid rgb(0 0 0 / 0.2);
-    /* 1 */
-    padding: 1rem background-color: #eee color: #333;
+    width: 20rem;
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 0.2);
+    padding: 1rem;
+    background-color: #eee;
+    color: #333;
     text-align: center;
 }
 
@@ -15,8 +18,10 @@ aside img {
 }
 
 main img {
-    width: 150px height: auto;
-    ...
+    width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px auto;
 }
 
 p {
