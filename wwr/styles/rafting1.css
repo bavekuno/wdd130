@@ -114,7 +114,7 @@ section>h2 {
     margin-bottom: 20px;
     font-size: 2.2rem;
     letter-spacing: 1px;
-    color: var(--primary-color);
+    color: var(--accent1-color);
     text-shadow: 0 2px 8px #c0e0de55;
     width: 100%;
     display: block;
@@ -160,7 +160,7 @@ section>h2 {
     text-align: center;
     margin-bottom: 24px;
     font-size: 2.1rem;
-    color: #222;
+    color: var(--accent1-color);
     letter-spacing: 1px;
 }
 
@@ -226,6 +226,7 @@ footer p {
     margin: 0;
     font-size: 1.08rem;
     color: var(--accent1-color);
+    /* This applies to general footer text. Will override specifically for wireframe link. */
     letter-spacing: 0.5px;
 }
 
@@ -280,7 +281,7 @@ footer {
 h1,
 h2 {
     font-family: var(--heading-font);
-    color: var(--primary-color);
+    color: var(--accent1-color);
 }
 
 nav,
@@ -324,15 +325,17 @@ article {
     height: auto;
 }
 
+/* Updated h1 to remove ribbon effect and left-align */
 h1 {
-    position: absolute;
-    top: 20px;
+    position: static;
+    top: auto;
     width: 100%;
-    padding: 16px;
-    text-align: center;
-    opacity: 0.7;
-    background-color: var(--accent1-color);
-    color: #fff;
+    padding: 0;
+    text-align: left;
+    opacity: 1;
+    background-color: transparent;
+    color: var(--accent1-color);
+    margin: 16px 16px 16px 0;
 }
 
 .hero article {
@@ -389,7 +392,7 @@ h1 {
     /* Spans across all columns */
     text-align: left;
     margin-bottom: 1.5rem;
-    color: var(--accent2-color);
+    color: var(--accent1-color);
     /* Updated heading color */
 }
 
@@ -436,8 +439,8 @@ h1 {
 
 .employee-section h2 {
     margin-bottom: 2rem;
-    color: var(--accent2-color);
-    /* Updated to accent2 color */
+    color: var(--accent1-color);
+    /* Updated heading color */
 }
 
 .employee-grid {
@@ -523,10 +526,9 @@ h1 {
 .contact-form-section h2 {
     text-align: center;
     margin-bottom: 1.5rem;
-    color: var(--accent2-color);
-    /* Updated to accent2 color */
+    color: var(--accent1-color);
+    /* Updated heading color */
 }
-
 
 .contact-form {
     display: grid;
